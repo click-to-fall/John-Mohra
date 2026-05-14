@@ -6,7 +6,7 @@
   <title>John & Mohra | Wedding Invitation</title>
   <meta property="og:title" content="دعوة فرح John & Mohra">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://click-to-fall.github.io/John-Mohra/image0.jfif">
+    <meta property="og:image" content="https://click-to-fall.github.io/John-Mohra/image0.jfif">
   <meta property="og:url" content="https://click-to-fall.github.io/John-Mohra/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +29,79 @@
       --gold-soft:#e9d7aa;
       --rose:#e7c7cf;
     }
+
+
+
+
+
+
+.top-names{
+  position:absolute;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:20;
+  text-align:center;
+  width:100%;
+  pointer-events:none;
+}
+
+.top-names .ring{
+  font-size:1.8rem;
+  margin-bottom:4px;
+  animation:ringGlow 2s infinite ease-in-out;
+}
+
+.top-names h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:clamp(2rem,5vw,3.2rem);
+  
+  color:#fff8dc;
+
+  background:linear-gradient(180deg,#fff017,#bd8e00,#9e7400);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  text-shadow:
+    0 0 8px rgba(255,255,255,.9),
+    0 0 18px rgba(255,215,120,.9),
+    0 4px 18px rgba(0,0,0,.75);
+
+  letter-spacing:.06em;
+  font-weight:800;
+}
+.top-names h1 span{
+  color:#e9d7aa;
+  padding:0 8px;
+}
+
+@keyframes ringGlow{
+  0%,100%{
+    transform:scale(1);
+    filter:drop-shadow(0 0 6px rgba(255,215,0,.5));
+  }
+  50%{
+    transform:scale(1.12);
+    filter:drop-shadow(0 0 14px rgba(255,215,0,.9));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     html { scroll-behavior:smooth; }
 
@@ -530,15 +603,21 @@
   <main class="page">
 
     <!-- ===== ENVELOPE POSTER ===== -->
+
     <section class="poster" id="poster">
+                     <div class="top-names">
+  <h1><span> John & Mohra </span></h1>
+</div>
       <div class="poster-box card">
+
         <div style="display:flex;justify-content:center;align-items:center;min-height:78vh;">
 
           <div id="envelope">
+            
             <div class="env-body"></div>
 
             <div class="env-photo">
-              <img src="image1env.jpg" alt="John & Mohra" draggable="false" />
+              <img src="image1.jpeg" alt="John & Mohra" draggable="false" />
             </div>
 
      
@@ -617,7 +696,8 @@
       <!-- ===== STACKED PHOTO DECK ===== -->
       <section class="section card photos-section">
         <div class="frame-label">
-
+          <h2>Our Moments</h2>
+          <p>اسحب الصورة يميناً أو يساراً لرؤية الصور ✦</p>
         </div>
 
         <div class="frame-wrapper">
@@ -629,12 +709,12 @@
               <div class="deck-spacer"></div>
 
               <!-- Cards: image2 → image7. index 0 = bottom, last = top (front) -->
-              <div class="deck-card" data-index="0"><img src="image7.jpg" alt="Photo 6" draggable="false"></div>
-              <div class="deck-card" data-index="1"><img src="image6.jpg" alt="Photo 5" draggable="false"></div>
-              <div class="deck-card" data-index="2"><img src="image5.jpg" alt="Photo 4" draggable="false"></div>
-              <div class="deck-card" data-index="3"><img src="image4.jpg" alt="Photo 3" draggable="false"></div>
-              <div class="deck-card" data-index="4"><img src="image3.jpg" alt="Photo 2" draggable="false"></div>
-              <div class="deck-card" data-index="5"><img src="image2.jpg" alt="Photo 1" draggable="false">
+              <div class="deck-card" data-index="0"><img src="image7.jpeg" alt="Photo 6" draggable="false"></div>
+              <div class="deck-card" data-index="1"><img src="image6.jpeg" alt="Photo 5" draggable="false"></div>
+              <div class="deck-card" data-index="2"><img src="image5.jpeg" alt="Photo 4" draggable="false"></div>
+              <div class="deck-card" data-index="3"><img src="image4.jpeg" alt="Photo 3" draggable="false"></div>
+              <div class="deck-card" data-index="4"><img src="image3.jpeg" alt="Photo 2" draggable="false"></div>
+              <div class="deck-card" data-index="5"><img src="image2.jpeg" alt="Photo 1" draggable="false">
               </div>
 
             </div>
